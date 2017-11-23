@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        body {
+            background: #f2efc6;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .column-layout {
+            max-width: 1000px;
+            background-color: white;
+            margin: 40px auto 0 auto;
+            line-height: 1.65;
+            padding: 20px 50px;
+        }
+        .ficzer-layout {
+            max-width: 1100px;
+            box-sizing: border-box;
+            margin: 40px auto 0 auto;         
+        }
+        .galeria-layout {
+            max-width: 1100px;
+            background-color: black;
+            max-width: 1100px;
+            margin: 40px auto 40px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .galeria-item {
+            text-align: center;
+            background-color: azure;
+            width: 150px;
+            height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px 20px 20px 20px; 
+            line-height: 100px;           
+        }
+        .ficzer {
+            padding: 20px 50px;
+            margin-bottom: 20px;
+            flex-basis: 21%;
+        }
+        .main-column {
+            order: 2;
+            flex-basis: 50%;
+            
+        }
+        .side-column1 {
+            font-size: 12px;
+            order: 1;
+            flex-basis: 20%;
+        }
+        .side-column2 {
+            font-size: 12px; 
+            order: 3;
+            flex-basis: 20%;
+        }
+        img {
+            max-width:100%;
+            max-height:100%;
+        }
+
+        .ficzer:nth-child(1) { background: aqua;}
+        .ficzer:nth-child(2) { background: rgb(242, 52, 140);}
+        .ficzer:nth-child(3) { background: rgb(16, 152, 20);}
+
+        @media (min-width: 900px) {
+            .column-layout {
+                display: flex;
+                justify-content: space-between;
+            }   
+            .ficzer-layout {
+                display: flex;
+                justify-content: space-between;
+            } 
+        }
+    </style>
+</head>
+<body>
+<div class="column-layout">
+    <div class="main-column">
+        <h2>Główna kolumna</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at egestas neque. Phasellus vitae porttitor orci. Vestibulum odio elit, malesuada sit amet maximus vitae, tempus quis nisl. Morbi a tempus felis. Donec volutpat nunc non lectus euismod, nec sagittis arcu lacinia. Quisque ullamcorper risus in arcu pharetra, sit amet iaculis ipsum tincidunt.</p>            
+        <p>Curabitur erat magna, laoreet aliquam maximus id, tempor a nisi. Maecenas iaculis tristique leo sit amet blandit. Nullam porta ornare libero, ac maximus erat congue scelerisque. Cras sit amet facilisis diam, et tincidunt ligula. Praesent magna enim, pellentesque at lacus at, tempor cursus odio. Aliquam imperdiet et nunc ut congue.</p> 
+        <p>Integer tempor augue mollis orci aliquam mattis.</p>       
+    </div>
+    <div class="side-column1">
+        <h2>Boczna numer 1</h2>
+        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,
+            Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,
+        </p>
+    </div>
+    <div class="side-column2">
+        <h2>Boczna numer 2</h2>
+        <p>Lorem ipsum dolor sit ametrisus in arcu pharetra, Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,
+            Lorem ipsum dolor sit ametrisus in arcu pharetra,Lorem ipsum dolor sit ametrisus in arcu pharetra,
+        </p>
+    </div>
+</div>
+<div class="ficzer-layout">
+    <div class="ficzer"><p>Lorem ipsum dolor sit ametrisus in arcu pharetra, Lorem ipsum dolor sit Lorem ipsum
+        dolor sit ametrisus in arcu pharetra, Lorem ipsum dolor sit</p></div>
+    <div class="ficzer"><p>Lorem ipsum dolor sit ametrisus in arcu pharetra, Lorem dolor sit ametrisus in arcu pharetra, Lor</p></div>
+    <div class="ficzer"><p>Lorem ipsum dolor sit ametrisuLorem ipsum dolor sit ametrisus in arcu pharetra, Lorem ipsum dolor sit Lorem ipsum
+        dolor sit ametrisus in arcu pharetra, Lorem ipsum dolor sitLorem ipsum dolor sit </p></div>
+</div>
+<div class="galeria-layout">
+    <div class="galeria-item"><img src="merkel.jpg" ></div>
+    <div class="galeria-item"><img src="merkel2.jpg" ></div>
+    <div class="galeria-item"><img src="merkel3.jpg" ></div>
+    <div class="galeria-item"><img src="merkel4.jpg" ></div>
+    <div class="galeria-item"><img src="merkel5.jpg" ></div>
+    <div class="galeria-item"><img src="merkel6.jpg" ></div>
+    <div class="galeria-item"><img src="merkel7.jpg" ></div>
+    <div class="galeria-item"><img src="merkel8.jpg" ></div>
+</div>
+</body>
+</html>
