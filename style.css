@@ -1,0 +1,270 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2c2c2c;
+    color: lightgray;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.45;
+    display: flex;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: grey;
+    flex: 1 1 20%;
+    min-width: 200px;
+    padding: 2em;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 2em;    
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.nav-item {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.nav-item-active {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-right: 1em;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+.nav-item:hover {
+   color: white;
+}
+
+.nav-item-active:hover {
+    color: white;
+}
+
+/* Main */
+
+.main {
+    padding: 5% 10% 5% 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: orange;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 7px 13px 0px rgba(23,23,23,1);
+    border-radius: 2px;
+}
+
+.grid-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.grid-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.grid-item.large {
+    grid-row: span 3;
+    grid-column: span 3;
+    
+}
+
+.grid-item.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.grid-item.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.two {
+    background-image: url("http://unsplash.it/800/600");
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.two::before {
+    content: '';
+    display: block;
+    background: black;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all ease-in-out 300ms;
+}
+
+.two:hover::before {
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-wrap: wrap;
+    }
+    .navbar {
+        max-height: 170px;
+    }
+    .nav-item {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-right: 2em;
+        justify-content: center;
+    }
+    .nav-item-active {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+    .title {
+        margin-bottom: 0.5em;    
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+
+    .nav-item-active {
+        font-size: 1.2rem;
+    }
+}
