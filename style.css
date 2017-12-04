@@ -116,17 +116,19 @@ body {
     background-color: ghostwhite;
     flex: 1 1 20%;
     min-width: 190px;
-    padding: 2em;
+    height: 100vh;
+    padding: 0 2em 2em;
 }
 
 .title {
-    font-size: 4vh;
+    font-size: 3vw;
     text-transform: uppercase;
-    margin-bottom: 2em;    
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 .title span {
-    font-size: 4vh;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -142,7 +144,7 @@ body {
 .nav-item-active {
     color: #3b78ce;
     text-decoration: none;
-    font-size: 6vh;
+    font-size: 4vw;
     display: inline-block;
     margin-right: 1em;
     font-weight: bold;
@@ -241,19 +243,25 @@ body {
     opacity: 0.2;
 }
 
-img {
-    max-width: 50%;
-    max-height: 50%;
-    object-fit: contain;
-}
-
 #foto {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 
-@media screen and (max-width: 900px) {
+#foto2 {
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: contain;
+}
+
+#foto3 {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 930px) {
     body {
         flex-wrap: wrap;
     }
@@ -277,7 +285,7 @@ img {
     }
     .main {
         padding: 5% 5% 5% 5%;
-        max-height: 100vw;
+        max-height: 100vh;
     }
     .grid-item {
         font-size: 3vw;
@@ -285,16 +293,20 @@ img {
     .grid-item.large {
         font-size: 6vw;
         grid-row: span 3;
-        grid-column: span 3;
-    
+        grid-column: span 3;    
     }
     
 }
 
-@media screen and (max-width: 650px) {
-    img {
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 5%;
+        max-height: 90px;
+    }
+    #foto2 {
         max-width: 100%;
         max-height: 100%;
+        object-fit: contain;
     }
 }
 
