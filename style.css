@@ -113,55 +113,56 @@ body {
 /* Navbar */
 
 .navbar {
-    background-color: grey;
+    background-color: ghostwhite;
     flex: 1 1 20%;
     min-width: 190px;
     padding: 2em;
 }
 
 .title {
+    font-size: 4vh;
     text-transform: uppercase;
     margin-bottom: 2em;    
 }
 
 .title span {
+    font-size: 4vh;
     font-weight: bold;
 }
 
 .nav-item {
     color: #5f5f5f;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 3vw;
     display: inline-block;
     margin-right: 1em;
     margin-bottom: 1em;
 }
 
 .nav-item-active {
-    color: white;
+    color: #3b78ce;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 6vh;
     display: inline-block;
     margin-right: 1em;
     font-weight: bold;
-    font-size: 1.6em;
     margin-bottom: 1em;
 }
 
 .nav-item:hover {
-   color: white;
+    color: #3b78ce;
 }
 
 .nav-item-active:hover {
-    color: white;
+    color: #3b78ce;
 }
 
 /* Main */
 
 .main {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 15% 5% 15%;
     flex: 1 1 80%;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .grid {
@@ -173,8 +174,8 @@ body {
 }
 
 .grid-item {
-    background-color: orange;
-    font-size: 5vh;
+    background-color: #3b78ce;
+    font-size: 2vw;
     font-weight: bold;
     color: white;
     display: flex;
@@ -193,15 +194,17 @@ body {
 }
 
 .grid-item.medium {
+    display: flex;
+    flex-wrap: wrap;
     padding: 30px;
     grid-row: span 2;
     grid-column: span 2;
 }
 
 .grid-item.large {
+    font-size: 4vw;
     grid-row: span 3;
-    grid-column: span 3;
-    
+    grid-column: span 3;   
 }
 
 .grid-item.tall {
@@ -239,17 +242,18 @@ body {
 }
 
 img {
-    display: block;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+#foto {
+    max-width: 100%;
     max-height: 100%;
-    height: auto;
+    object-fit: contain;
 }
 
-#napis1 {
-
-}
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     body {
         flex-wrap: wrap;
     }
@@ -274,6 +278,23 @@ img {
     .main {
         min-height: 40vh;
     }
+    .grid-item {
+        font-size: 3vw;
+    }
+    .grid-item.large {
+        font-size: 6vw;
+        grid-row: span 3;
+        grid-column: span 3;
+    
+    }
     
 }
+
+@media screen and (max-width: 650px) {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
 
