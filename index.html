@@ -2,45 +2,66 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <title>Grid Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="Script1.js"></script>
+    <title>Mechanika - Pytanie 1</title>
 </head>
 <body>
-<div class="navbar">
-    <div class="title">Super<span> strona</span>
-    </div>
-    <nav>
-        <a href="" class="nav-item-active">Home</a>
-        <a href="" class="nav-item">O nas</a>
-        <a href="" class="nav-item">Portfolio</a>
-        <a href="" class="nav-item">Kontakt</a>
-    </nav>
-</div>
-<div class="main">
-    <div class="grid">
-        <div class="grid-item medium">
-            Kalendarz
-        </div>
-        <div class="grid-item large two">Projekty</div>
-        <div class="grid-item medium">
-            <div>
-                <p>Spis Książek</p>
-                <img id="foto2" src="book1.png"/>
+    <header>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+            <a class="navbar-brand" href="#">Fizyka - Test</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dzialy.html">Działy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wynik</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="grid-item small">
-            <img id="foto" src="fot_ico.png"/>
-        </div>
-        <div class="grid-item tall">
-            <div>
-                <p>Godziny zajęć</p>
-                <img id="foto3" src="clock.png"/>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid kontener">
+            <div class="row box">
+                <aside class="col-sm-12 text-center licznik">
+                    <h1>Pytanie 1/12 </h1>
+                </aside>
+                <div class="col-sm-12 bg-primary text-center my-3 text-light rounded-right">
+                    <embed src="zadanie.pdf" type="application/pdf" width="100%" height="600px" />
+                </div>
             </div>
-        </div>
-        <div class="grid-item wide">Aktualności</div>
-    </div>
-</div>
+            <div class="row box">
+                <div class="col-sm-12 p-4 my-3 bg-primary text-light rounded-left">
+                    <div class="row">
+                        <p class="p-4 center">Wpisz odpowiedź do zadania:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12"><input type="text" name="Odpowiedz"></div>
+                    </div>
+                    <p id="odpowiedz"></p>
+                    <button onclick="showAnswer()">Dalej</button>
+                </div>
+            </div>
+        </div>  
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

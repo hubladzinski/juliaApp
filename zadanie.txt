@@ -1,0 +1,19 @@
+Gezmat http://gezmat.pl
+Copyright 2015--2019 Autorzy pakietu Gezmat
+Licencja CC BY-SA 4.0 http://creativecommons.org/licenses/by-sa/4.0/deed.pl
+
+Przygotuj \texttt{all\_problems\_pl.gzm} z wszystkimi identyfikatorami zadań
+Warszawa, 2017-09-30
+Koordynator
+Po wywołaniu \begin{center} \verb|./gezmat.bash def/pl-prepare-all-problems-config.gzm| \end{center} generowany jest plik \verb|def/all_problems_pl.gzm| z identyfikatorami wszystkich zadań w~j.~polskim.
+----------------------------------------------------------
+Ogrzewanie wody
+
+Ile ciepła należy dostarczyć $500$ g wody, aby ogrzać ją o $55$ K? Wynik wyraź w kJ. Przyjmij, że ciepło właściwe wody wynosi $4200$ J/(kg$\cdot$K).
+
+
+  \[ c_w = \frac{ Q}{m \cdot \Delta T} \]
+  $c_w$ - ciepło właściwe, $Q$ - przekazane ciepło, $\Delta T$ - zmiana temperatury.
+  
+
+Należy dostarczyć $?115,5$ kJ.
