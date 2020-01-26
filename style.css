@@ -366,6 +366,10 @@ body {
   text-transform: uppercase;
 }
 
+#menu-burger {
+  display: none;
+}
+
 @media (max-width: 1400px) {
   .form-box {
     margin-left: 9vw;
@@ -417,6 +421,80 @@ body {
   .hero_text {
     font-size: 72px;
   }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    font-size: 36px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: auto;
+    padding-right: 7vw;
+    margin-top: 10px;
+  }
+  .menu {
+    height: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+    margin: 0 0 0 50px;
+  }
+  .menu_item {
+    font-size: 26px;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .menu-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu-burger {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .menu-flex label {
+    padding: 12px 10px;
+    margin: 20px 0 20px 30px;
+    background-image: url(bars-solid.svg);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    cursor: pointer;
+  }
+  input:checked + label {
+    padding: 15px 10px;
+    background-image: url(times-solid.svg);
+    background-repeat: no-repeat;
+  }
+  input:checked ~ .menu {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 750px) {
@@ -434,14 +512,15 @@ body {
     font-size: 32px;
   }
   .navigation {
-    padding: 5px 30px;
+    padding: 5px 20px;
   }
   .menu_item {
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 10px;
   }
   .logo {
     font-size: 24px;
+    margin-top: 18px;
   }
   .item_title {
     margin-top: 10px;
@@ -504,10 +583,10 @@ body {
     font-size: 20px;
   }
   .navigation {
-    padding: 5px 30px;
+    padding: 5px 20px;
   }
   .menu_item {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 10px;
   }
   .logo {
