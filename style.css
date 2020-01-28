@@ -8,6 +8,13 @@
           box-sizing: border-box;
 }
 
+.white-ovveride {
+  background-color: white !important;
+  color: #5F5959 !important;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -23,10 +30,44 @@ body {
   padding: 5% 30%;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.wrapper_hero {
+  position: relative;
+  top: 0;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 5px 100px;
+  color: white;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  z-index: 99;
+}
+
+.navigation-scrolling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
   top: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -37,6 +78,10 @@ body {
   width: 100%;
   padding: 5px 100px;
   color: #5F5959;
+  border: 1px solid #f4f4f4;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  z-index: 99;
 }
 
 .logo {
@@ -63,7 +108,7 @@ body {
   padding: 0;
   background: url(kappa.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 1100px;
+  height: 100vh;
 }
 
 .hero_text {
@@ -432,6 +477,17 @@ body {
     width: 100%;
     padding: 0;
   }
+  .navigation-scrolling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 0;
+    width: 100%;
+    padding: 0;
+  }
   .logo {
     font-size: 36px;
     -webkit-box-ordinal-group: 4;
@@ -479,15 +535,18 @@ body {
     padding: 0;
     display: none;
   }
-  .menu-flex label {
+  .menu-burger-label {
     padding: 12px 10px;
     margin: 20px 0 20px 30px;
-    background-image: url(bars-solid.svg);
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='bars' class='svg-inline--fa fa-bars fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='white' d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'%3E%3C/path%3E%3C/svg%3E");
     -ms-flex-item-align: start;
         align-self: flex-start;
     cursor: pointer;
   }
-  input:checked + label {
+  .menu-burger-label-scrolling {
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='bars' class='svg-inline--fa fa-bars fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='black' d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  input:checked + .menu-burger-label {
     padding: 15px 10px;
     background-image: url(times-solid.svg);
     background-repeat: no-repeat;
@@ -512,6 +571,9 @@ body {
     font-size: 32px;
   }
   .navigation {
+    padding: 5px 20px;
+  }
+  .navigation-scrolling {
     padding: 5px 20px;
   }
   .menu_item {
@@ -583,6 +645,9 @@ body {
     font-size: 20px;
   }
   .navigation {
+    padding: 5px 20px;
+  }
+  .navigation-scrolling {
     padding: 5px 20px;
   }
   .menu_item {
