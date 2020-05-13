@@ -5,6 +5,6 @@ module.exports = {
   mode: "development",
   output: {
     filename: "bundle.js",
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "docs"),
   },
 };
