@@ -36,30 +36,10 @@ body {
   position: relative;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-  background-color: transparent;
-  top: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  padding: 5px 100px;
-  color: white;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
-  z-index: 99;
-}
-
 .navigation_logo {
-  font-size: 36px;
+  font-family: "Playfair Display SC", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -83,7 +63,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .navigation .logo {
+  .navigation_logo {
     font-size: 24px;
   }
 }
@@ -118,7 +98,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  padding: 5px 100px;
+  padding: 0px 100px;
   color: #5f5959;
   border: 1px solid #f4f4f4;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -174,11 +154,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .menu_item {
-  font-size: 26px;
+  font-size: 17px;
   margin-left: 77px;
+  font-family: "Playfair Display SC", sans-serif;
 }
 
 @media (max-width: 1150px) {
@@ -229,9 +212,9 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: url(../assets/kappa.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+  background: url(../assets/background.jpg) no-repeat center center fixed;
+  background-size: auto;
+  height: 62vh;
 }
 
 @media (max-width: 750px) {
@@ -247,34 +230,45 @@ body {
 }
 
 .hero_text {
-  color: white;
-  font-size: 92px;
+  color: black;
+  font-size: 72px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 42%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 5px;
   text-align: center;
+  font-family: "Cinzel", sans-serif;
+}
+
+.position-overdie {
+  font-family: "Libre Caslon Display", sans-serif;
+  top: 58% !important;
+  font-size: 40px !important;
+  width: 100vw;
 }
 
 @media (max-width: 1400px) {
-  .hero_text {
+  .hero_text,
+  .position-overdie {
     line-height: 105px;
     font-size: 82px;
   }
 }
 
 @media (max-width: 1150px) {
-  .hero_text {
+  .hero_text,
+  .position-overdie {
     font-size: 72px;
   }
 }
 
 @media (max-width: 750px) {
-  .hero_text {
+  .hero_text,
+  .position-overdie {
     top: 35%;
     line-height: 50px;
     font-size: 50px;
@@ -284,7 +278,8 @@ body {
 }
 
 @media (max-width: 500px) {
-  .hero_text {
+  .hero_text,
+  .position-overdie {
     top: 50%;
     line-height: 40px;
     font-size: 22px;

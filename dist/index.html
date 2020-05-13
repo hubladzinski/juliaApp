@@ -14,33 +14,94 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Dancing+Script:wght@500&family=Libre+Caslon+Display&family=Playfair+Display+SC:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Wizaż</title>
   </head>
   <body>
     <main class="wrapper">
       <div class="wrapper_mobile">
-        <nav class="navigation" id="navbar">
+        <nav class="navigation-scrolling" id="navbar">
           <span class="navigation_logo">wizaż</span>
           <div class="navigation_menu-flex">
-            <input type="checkbox" id="menu-burger" name="checkbox" />
+            <input
+              class="white-ovveride"
+              type="checkbox"
+              id="menu-burger"
+              name="checkbox"
+            />
             <label
               for="menu-burger"
               id="burger"
-              class="menu-burger-label"
+              class="menu-burger-label menu-burger-label-scrolling"
             ></label>
             <ul class="menu">
-              <li class="menu_item">Oferta</li>
-              <li class="menu_item">Dzieła</li>
+              <li class="menu_item">O mnie</li>
+              <li class="menu_item">Portfolio</li>
+              <li class="menu_item">Cennik</li>
+              <li class="menu_item">Współpraca</li>
               <li class="menu_item">Kontakt</li>
             </ul>
           </div>
         </nav>
         <header class="wrapper-hero">
           <div class="wrapper-hero_hero">
-            <h1 class="hero_text">julia ładzińska</h1>
+            <h1 class="hero_text">julia inska</h1>
+            <h1 class="hero_text position-overdie">
+              piękno, styl i indywidualizm
+            </h1>
           </div>
         </header>
       </div>
+      <section>
+        <div class="container">
+          <div class="container_text">
+            <h2 class="container_title">wizaż profesjonalny</h2>
+          </div>
+          <div class="container_grid">
+            <div class="item">
+              <div class="item_header">
+                <h2 class="item_title">makijaż sylwestrowy</h2>
+              </div>
+              <div class="item_content">
+                <img class="item_image" src="../assets/kappa.jpg" />
+                <p class="item_paragraph">
+                  Świetnie, świetnie kup kup ten makijaż tak
+                </p>
+                <button class="item_button button">cena</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_header">
+                <h2 class="item_title">makijaż sylwestrowy</h2>
+              </div>
+              <div class="item_content">
+                <img class="item_image" src="../assets/kappa.jpg" />
+                <p class="item_paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Unde, quae.
+                </p>
+                <button class="item_button button">cena</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_header">
+                <h2 class="item_title">makijaż sylwestrowy</h2>
+              </div>
+              <div class="item_content">
+                <img class="item_image" src="../assets/kappa.jpg" />
+                <p class="item_paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Unde, quae.
+                </p>
+                <button class="item_button button">cena</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <div class="container">
           <div class="container_text">
