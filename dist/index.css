@@ -367,6 +367,10 @@ body {
   }
 }
 
+.image-omnie {
+  width: 100%;
+}
+
 .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,7 +495,7 @@ body {
 }
 
 .white-background {
-  background-color: #f4ebe7;
+  background-color: #f3f2f7;
 }
 
 .container-flex {
