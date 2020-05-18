@@ -26,6 +26,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -186,14 +187,14 @@ body {
 
   @media (max-width: 750px) {
     &_item {
-      font-size: 16px;
+      font-size: 19px;
       margin-left: 10px;
     }
   }
 
   @media (max-width: 500px) {
     &_item {
-      font-size: 14px;
+      font-size: 19px;
       margin-left: 10px;
     }
   }

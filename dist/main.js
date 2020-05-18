@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var nav = document.getElementById(\"navbar\");\r\nvar burger = document.getElementById(\"burger\");\r\nvar hasScrolled = false;\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("let nav = document.getElementById(\"navbar\");\r\nlet burger = document.getElementById(\"burger\");\r\nlet hasScrolled = false;\r\n\r\nlet checkbox = document.querySelector(\"#menu-burger\");\r\nlet links = document.querySelectorAll(\"a\");\r\n\r\ncheckbox.addEventListener(\"change\", function () {\r\n  if (this.checked && hasScrolled == false) {\r\n    nav.classList.add(\"white-ovveride\");\r\n  } else {\r\n    nav.classList.remove(\"white-ovveride\");\r\n  }\r\n});\r\n\r\nlinks.forEach((link) => {\r\n  link.addEventListener(\"click\", () => jumpLink());\r\n});\r\n\r\nfunction jumpLink() {\r\n  if (nav.classList.contains(\"white-ovveride\")) {\r\n    checkbox.checked = false;\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
