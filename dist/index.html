@@ -38,8 +38,8 @@
               class="menu-burger-label menu-burger-label-scrolling"
             ></label>
             <ul class="menu">
-              <li class="menu_item">O mnie</li>
-              <li class="menu_item">Portfolio</li>
+              <li class="menu_item"><a href="#section1">O mnie</a></li>
+              <li class="menu_item"><a href="#section2">Portfolio</a></li>
               <li class="menu_item">Cennik</li>
               <li class="menu_item">Współpraca</li>
               <li class="menu_item">Kontakt</li>
@@ -55,7 +55,7 @@
           </div>
         </header>
       </div>
-      <section>
+      <section id="section1">
         <div class="container">
           <div class="container_text">
             <h2 class="container_title"></h2>
@@ -83,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="section2">
         <div class="container white-background">
           <div class="container_text">
             <h2 class="container_title">Portfolio</h2>
@@ -269,21 +269,44 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="section3">
         <div class="container">
           <div class="container_text">
             <h2 class="container_title">Cennik</h2>
           </div>
           <div class="container_cennik">
-            <ul>
-              <li>Malowanie słabe: 300zł</li>
-              <li>Malowanie takie se: 301zł</li>
-              <li>Malowanie dobre: 305zł</li>
+            <ul class="cennik-list">
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
+            </ul>
+            <ul class="cennik-list">
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
+              <li class="cennik-list_item item-cennik">
+                <div class="item-cennik_paragraph">Malowanie słabe:</div>
+                <div class="item-cennik_pricing">300zł</div>
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section>
+      <section id="section4">
         <div class="container">
           <div class="container_text">
             <h2 class="container_title">kontakt</h2>
@@ -296,7 +319,7 @@
                   - na stronie
                 </p>
               </div>
-              <button class="item-flex_button">
+              <button class="item-flex_button" id="messenger-button">
                 <span class="item-flex_fix">
                   <div class="item-flex_button-container2">
                     <img

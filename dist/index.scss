@@ -10,11 +10,22 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .white-ovveride {
   background-color: white !important;
   color: #5f5959 !important;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 body {
@@ -476,10 +487,9 @@ body {
 
   &_cennik {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
-    font-size: 3vw;
+    justify-content: center;
   }
 
   @media (max-width: 1150px) {
@@ -495,6 +505,10 @@ body {
   @media (max-width: 1000px) {
     &_omnie {
       padding: 0;
+    }
+
+    &_cennik {
+      flex-direction: column;
     }
   }
 
@@ -547,6 +561,57 @@ body {
   }
 }
 
+.cennik-list {
+  list-style: none;
+  max-width: 700px;
+  width: 100%;
+  padding: 0;
+  padding: 0 80px 0 80px;
+  margin: 0;
+  &_item {
+    border-bottom: #f3f2f7 solid 3px;
+    padding: 50px 0 35px 0;
+  }
+
+  @media (max-width: 540px) {
+    padding: 0 40px 0 40px;
+  }
+}
+
+.item-cennik {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  &_paragraph {
+    display: inline-block;
+    font-size: 28px;
+  }
+  &_pricing {
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  @media (max-width: 540px) {
+    &_paragraph {
+      font-size: 20px;
+    }
+
+    &_pricing {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    &_paragraph {
+      font-size: 17px;
+    }
+
+    &_pricing {
+      font-size: 19px;
+    }
+  }
+}
+
 .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,7 +620,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 450px;
+  min-height: 500px;
   min-width: 350px;
   background-color: #ebc6ce;
   -webkit-box-shadow: 0 7px 20px 5px rgba(0, 0, 0, 0.2);
@@ -776,7 +841,6 @@ body {
     height: 50px;
     width: 200px;
     margin-bottom: 50px;
-    background-color: #ebc6ce;
     font-family: "Roboto", sans-serif;
   }
   .item-flex_button-container1 {
@@ -797,6 +861,10 @@ body {
     max-height: 100%;
     margin-left: 23px;
   }
+}
+
+#messenger-button {
+  background-color: #ebc6ce !important;
 }
 
 .container-flex2 {
