@@ -6,6 +6,7 @@ let checkbox = document.querySelector("#menu-burger");
 let links = document.querySelectorAll("a");
 
 const instaButton = document.querySelector("#insta-button");
+const messengerButton = document.querySelector("#messenger-button");
 
 checkbox.addEventListener("change", function () {
   if (this.checked && hasScrolled == false) {
@@ -19,6 +20,10 @@ instaButton.addEventListener("click", () => {
   window.open("https://www.instagram.com/julia_inska/");
 });
 
+messengerButton.addEventListener("click", () => {
+  window.open("https://www.facebook.com/Julia-Inska-104344307960361/");
+});
+
 links.forEach((link) => {
   link.addEventListener("click", () => jumpLink());
 });
@@ -28,11 +33,12 @@ function jumpLink() {
     checkbox.checked = false;
   }
 }
+
 function initMap() {
-  let bydgoszcz = { lat: 53.125, lng: 18.011111 };
+  let bydgoszcz = { lat: 53.031111, lng: 18.008889 };
 
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 9,
+    zoom: 10,
     center: bydgoszcz,
   });
 
@@ -44,7 +50,7 @@ function initMap() {
     fillOpacity: 0.2,
     map: map,
     center: bydgoszcz,
-    radius: 20000,
+    radius: 15000,
   });
 }
 window.initMap = initMap;
