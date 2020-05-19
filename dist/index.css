@@ -565,6 +565,12 @@ body {
 
 @media (max-width: 770px) {
   .container_omnie {
+    margin: 100px 0 0px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container_omnie {
     margin: 100px 0 100px 0;
   }
 }
