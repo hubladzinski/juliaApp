@@ -250,7 +250,7 @@
           </div>
           <div class="container-flex">
             <div class="item-flex">
-              <button class="item-flex_button">
+              <button class="item-flex_button" id="insta-button">
                 <span class="item-flex_fix">
                   <div class="item-flex_button-container1">
                     <img
@@ -273,36 +273,40 @@
           <div class="container_cennik">
             <ul class="cennik-list">
               <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
+                <div class="item-cennik_paragraph">Makijaż okazjolany:</div>
+                <div class="item-cennik_pricing">100zł</div>
               </li>
               <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
-              </li>
-              <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
+                <div class="item-cennik_paragraph">Makijaż ślubny:</div>
+                <div class="item-cennik_pricing">150zł</div>
               </li>
             </ul>
             <ul class="cennik-list">
               <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
+                <div class="item-cennik_paragraph">Makijaż ślubny próbny:</div>
+                <div class="item-cennik_pricing">150złzł</div>
               </li>
               <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
-              </li>
-              <li class="cennik-list_item item-cennik">
-                <div class="item-cennik_paragraph">Malowanie słabe:</div>
-                <div class="item-cennik_pricing">300zł</div>
+                <div class="item-cennik_paragraph">
+                  Indywidualna nauka makijażu:
+                </div>
+                <div class="item-cennik_pricing">290zł</div>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section id="section4">
+        <div class="container white-background">
+          <div class="container_text">
+            <h2 class="container_title">Tu dojeżdzam</h2>
+          </div>
+          <div class="map-wrapper">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </section>
+      <section id="section5">
         <div class="container">
           <div class="container_text">
             <h2 class="container_title">kontakt</h2>
@@ -351,5 +355,10 @@
       </section>
     </main>
     <script src="main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA3qzFA1aLTaewFg3BAOq2dS3MB7BkmtE&callback=initMap"
+    ></script>
   </body>
 </html>
