@@ -78,10 +78,15 @@ function sendData() {
     body: formData,
   })
     .then((data) => {
-      console.log("Success - POST");
       console.log(data);
-      messagePopup.textContent = "Wiadomość wysłana";
-      messagePopup.classList.add("transition");
+      if (data.status == 200) {
+        console.log("Success - POST");
+        messagePopup.textContent = "Wiadomość wysłana";
+        messagePopup.classList.add("transition");
+      } else {
+        messagePopup.textContent = "Błąd wysyłania wiadomości";
+        messagePopup.classList.add("transition");
+      }
     })
     .catch((error) => {
       console.error("Error - POST");
