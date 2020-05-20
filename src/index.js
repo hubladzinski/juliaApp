@@ -77,7 +77,6 @@ function sendData() {
     method: "POST", // or 'PUT'
     body: formData,
   })
-    .then((response) => response.text())
     .then((data) => {
       console.log("Success - POST");
       messagePopup.textContent = "Wiadomość wysłana";
@@ -85,6 +84,7 @@ function sendData() {
     })
     .catch((error) => {
       console.error("Error - POST");
+      console.log(error);
       messagePopup.textContent = "Błąd wysyłania wiadomości";
       messagePopup.classList.add("transition");
     });
