@@ -7,6 +7,8 @@ let links = document.querySelectorAll("a");
 
 const instaButton = document.querySelector("#insta-button");
 const messengerButton = document.querySelector("#messenger-button");
+const sendButton = document.querySelector("#send-button");
+const messagePopup = document.querySelector("#message-send-popup");
 
 checkbox.addEventListener("change", function () {
   if (this.checked && hasScrolled == false) {
@@ -54,3 +56,36 @@ function initMap() {
   });
 }
 window.initMap = initMap;
+
+sendButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  sendData();
+});
+
+messagePopup.addEventListener("click", () => {
+  messagePopup.classList.remove("transition");
+});
+
+function sendData() {
+  let phoneNumber = document.querySelector("#phoneNumber").value;
+  let message = document.querySelector("#message").value;
+  let formData = new FormData();
+  formData.append("phoneNumber", phoneNumber);
+  formData.append("message", message);
+
+  fetch("send.php", {
+    method: "POST", // or 'PUT'
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      console.log("Success - POST");
+      messagePopup.textContent = "Wiadomość wysłana";
+      messagePopup.classList.add("transition");
+    })
+    .catch((error) => {
+      console.error("Error - POST");
+      messagePopup.textContent = "Błąd wysyłania wiadomości";
+      messagePopup.classList.add("transition");
+    });
+}

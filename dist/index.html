@@ -336,11 +336,10 @@
               <form class="form-box_form form">
                 <input
                   class="form_number"
-                  type="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                  name="e-mail"
-                  id="e-mail"
-                  placeholder="Twój numer telefonu [Format: 123-456-789]"
+                  type="text"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Twój numer telefonu"
                   required
                 />
                 <textarea
@@ -350,11 +349,14 @@
                   id="message"
                   placeholder="W czym mogę pomóc?"
                 ></textarea>
-                <button class="form_button">wyślij</button>
+                <button class="form_button" id="send-button">wyślij</button>
               </form>
             </div>
           </div>
         </div>
+        <button class="message-send-popup hidden" id="message-send-popup">
+          Wiadomość wysłana
+        </button>
       </section>
     </main>
     <script src="main.js"></script>
