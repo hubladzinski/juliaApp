@@ -875,6 +875,10 @@ body {
   .omnie {
     font-size: 22px;
   }
+  .message-send-popup {
+    width: 250px;
+    margin-left: calc(50% - 125px);
+  }
 }
 @media (max-width: 550px) {
   .hero_text {

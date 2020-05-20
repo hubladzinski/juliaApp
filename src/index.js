@@ -59,7 +59,14 @@ window.initMap = initMap;
 
 sendButton.addEventListener("click", (e) => {
   e.preventDefault();
-  sendData();
+  let phoneNumber = document.querySelector("#phoneNumber").value;
+  if (document.querySelector("#phoneNumber").value) {
+    sendData();
+  } else {
+    messagePopup.textContent = "Wpisz telefon";
+    if (!messagePopup.classList.contains("transition"))
+      messagePopup.classList.add("transition");
+  }
 });
 
 messagePopup.addEventListener("click", () => {
@@ -82,16 +89,19 @@ function sendData() {
       if (data.status == 200) {
         console.log("Success - POST");
         messagePopup.textContent = "Wiadomość wysłana";
-        messagePopup.classList.add("transition");
+        if (!messagePopup.classList.contains("transition"))
+          messagePopup.classList.add("transition");
       } else {
         messagePopup.textContent = "Błąd wysyłania wiadomości";
-        messagePopup.classList.add("transition");
+        if (!messagePopup.classList.contains("transition"))
+          messagePopup.classList.add("transition");
       }
     })
     .catch((error) => {
       console.error("Error - POST");
       console.log(error);
       messagePopup.textContent = "Błąd wysyłania wiadomości";
-      messagePopup.classList.add("transition");
+      if (!messagePopup.classList.contains("transition"))
+        messagePopup.classList.add("transition");
     });
 }
