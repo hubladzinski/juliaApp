@@ -79,6 +79,7 @@ function sendData() {
   })
     .then((data) => {
       console.log("Success - POST");
+      console.log(data);
       messagePopup.textContent = "Wiadomość wysłana";
       messagePopup.classList.add("transition");
     })
