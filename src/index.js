@@ -1,3 +1,5 @@
+import "./index.scss";
+
 let nav = document.getElementById("navbar");
 let burger = document.getElementById("burger");
 let hasScrolled = false;
