@@ -1,4 +1,5 @@
 import "./index.scss";
+import "./portfolioImages.scss";
 
 let nav = document.getElementById("navbar");
 let burger = document.getElementById("burger");
@@ -57,7 +58,6 @@ function initMap() {
     radius: 15000,
   });
 }
-window.initMap = initMap;
 
 sendButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -87,7 +87,6 @@ function sendData() {
     body: formData,
   })
     .then((data) => {
-      console.log(data);
       if (data.status == 200) {
         console.log("Success - POST");
         messagePopup.textContent = "Wiadomość wysłana";
@@ -107,3 +106,5 @@ function sendData() {
         messagePopup.classList.add("transition");
     });
 }
+
+window.initMap = initMap;
