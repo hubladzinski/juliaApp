@@ -1159,6 +1159,12 @@ body {
   .container_omnie {
     margin: 100px 0 100px 0;
   }
+  .item-cennik_paragraph {
+    font-size: 17px;
+  }
+  .item-cennik_pricing {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1166,10 +1172,10 @@ body {
     font-size: 32px;
   }
   .item-cennik_paragraph {
-    font-size: 17px;
+    font-size: 15px;
   }
   .item-cennik_pricing {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=index.css.map */
