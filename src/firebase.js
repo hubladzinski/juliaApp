@@ -16,6 +16,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 function sendMessageToDB(message) {
   return firebase
