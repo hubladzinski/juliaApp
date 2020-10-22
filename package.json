@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/hublad2/hublad2.github.io#readme",
   "dependencies": {
+    "firebase": "^7.16.0",
+    "validator": "^13.1.1",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
