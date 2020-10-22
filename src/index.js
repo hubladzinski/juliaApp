@@ -76,8 +76,8 @@ sendButton.addEventListener("click", (e) => {
       telephone: phoneNumber,
       date: new Date(Date.now()),
     };
-    let kek = sendMessageToDB(message);
-    kek.then((response) => {
+    let dbMessage = sendMessageToDB(message);
+    dbMessage.then((response) => {
       informUser(response);
       if (response) {
         sendEmail(message);
